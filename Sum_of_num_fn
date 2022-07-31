@@ -1,0 +1,12 @@
+lst = []
+sz = int(input("Enter size of the list:"))
+for i in range(0,sz):
+    a = int(input())
+    lst.append(a)
+def sum(lst,sz):
+    if sz == 0:
+        return 0
+    else:
+        return lst[sz - 1] + sum(lst,sz - 1)
+s = sum(lst,len(lst))
+print("Sum of the numbers in the list are:",s)
