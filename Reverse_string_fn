@@ -1,0 +1,7 @@
+def rev(str):
+    str1 = ""
+    for r in str:
+        str1 = r + str1
+    return str1
+str = input("Enter the string:")
+print("Reversed string:", rev(str))
